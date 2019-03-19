@@ -1,6 +1,6 @@
 # Simple computational chemistry pipeline in jupyter notebook
 
-- Exercise for Spring school in comp chem 2019
+- Exercise for SSCC-19
 - Markus Rauhalahti, markus.rauhalahti@helsinki.fi, mrauha.github.io
 
 
@@ -15,15 +15,13 @@ conda create -c rdkit -n my-rdkit-env rdkit
 ```
 source activate my-rdkit-env
 ```
+- (To deactivate the environment type `source deactivate`)
 
-- To deactivate the environment
-```
-source deactivate
-```
-
-- Install jupyter notebook
+- Install jupyter notebook and some other libraries to the environment
 ```
 conda install jupyter
+conda install matplotlib
+pip install deepdish
 ```
 
 - To load the new environment in jupyter notebook, type in the following command (once the environment is activated). See [this](https://ipython.readthedocs.io/en/stable/install/kernel_install.html#kernels-for-different-environments) page for more info.
